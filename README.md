@@ -1,13 +1,29 @@
-# Anotações
+# pass.in
 
+O pass.in é uma aplicação de **gestão de partipantes em eventos presenciais**. 
 
-REST
-HTTP verbs, GET, POST, PUT, PATCH, DELETE
-Header Transfere o contexto da requisição
-Body (req body)
-Search Params / query params => parametros de busca
-Route Params (parâmetros de rota) Identificação do recurso 
+A ferramenta permite que o organizador cadastre um evento e abra uma página pública de inscrição
 
-Sobre banco de dados
-Driver nativos => mais baixo nivel, mais verboso, mais veloz
-ORM => mais alto nivel, mais abstrato, mais lento
+Os participantes inscritos podem emitir uma credencial para check-in no dia do evento.
+
+O sistema fará um scan da credencial do participante para permitir a entrada no evento.
+
+## Requisitos
+
+### Requisitos funcionais
+- [ ] O organizaor deve poder cadastrar um novo evento;
+- [ ] O organizaor deve poder visualizar dados de um evento;
+- [ ] O organizaor deve poder visualizar a lista de participantes;
+- [ ] O participante deve poder se inscrever em um evento;
+- [ ] O participante deve poder visualizar seu crachá de inscrição;
+- [ ] O participante deve poder realizar check-in no evento;
+
+### Regras de negócio 
+
+- [ ] O participante só pode se inscrever em um evento uma única vez;
+- [ ] O participante só pode se inscrever em eventos com vagas disponíveis;
+- [ ] O participante só pode realizar check-in em um evento uma única vez;
+
+### Requisitos não-funcionais
+
+- [ ] O check-in no evento será realizado através de um QRCode;
